@@ -5,14 +5,14 @@ font-family: 'Roboto Slab', serif;
 }
 
 body{
-    font-family:'Roboto Mono', monospace;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+        font-family:'Roboto Mono', monospace;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
 }
 a{
     text-decoration: none;
@@ -27,10 +27,17 @@ header{
     background-color: lightgray;
 }
 header .header-icons-container{
+    display: flex;
     width: 100%;
     height: 50px;
-    display: grid;
+/*     display: grid; */
     background-color: lightcyan;
+    justify-content: flex-end;
+}
+.header-icons-container a {
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
 }
 
 header .header-icons-container .icons{
@@ -61,7 +68,7 @@ header .icons span{
      margin-left: 50px;
  }
  nav .nav-logo-container img {
-     width: 180px;
+     width: 70px;
  }
 
  nav .profile-link{
@@ -86,7 +93,7 @@ header .icons span{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
-    background-image: url("../src/img/background.jpg");
+    background-image: url("../src/img/Shen_SurgeonSkin.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,19 +110,20 @@ header .icons span{
 .home-main-text{
     font-family:'Roboto Mono', monospace;
     font-size: 30px;
-    font-weight: 700px;
+    font-weight: 1000px;
     letter-spacing: 10px;
     text-align: center;
-    color: white;
+    color: black;
 }
 .home-main-button{
     width: 110px;
-    height: 50px;
+    height: 100px;
     background-color: lightblue;
     display: grid;
     align-items: center;
+    border-radius: 25px;
 }
 .home-main-button a{
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
 }
